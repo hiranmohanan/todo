@@ -23,15 +23,9 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for ios - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return ios;
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -50,22 +44,44 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDZ2-GZRrjl2jkNTaqBkBbMuT_G-zo3ZtA',
-    appId: '1:490808776138:web:db781a2062082bbdfaeb33',
-    messagingSenderId: '490808776138',
-    projectId: 'tiktac-5d55d',
-    authDomain: 'tiktac-5d55d.firebaseapp.com',
-    databaseURL: 'https://tiktac-5d55d.firebaseio.com',
-    storageBucket: 'tiktac-5d55d.appspot.com',
-    measurementId: 'G-MWG4QBZJ4S',
+    apiKey: 'AIzaSyD_VRH_PQvBnTVsJAEI4Vox095ixJKy44g',
+    appId: '1:381796812762:web:71787e5fa70f93caea62e3',
+    messagingSenderId: '381796812762',
+    projectId: 'new-project-f0523',
+    authDomain: 'new-project-f0523.firebaseapp.com',
+    databaseURL: 'https://new-project-f0523-default-rtdb.firebaseio.com',
+    storageBucket: 'new-project-f0523.appspot.com',
+    measurementId: 'G-HB2ZWLD3CM',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDWx-VVyKI5LALIfiZuTxgCsCVy_EB9Mws',
-    appId: '1:490808776138:android:1da36f6f12f2b61afaeb33',
-    messagingSenderId: '490808776138',
-    projectId: 'tiktac-5d55d',
-    databaseURL: 'https://tiktac-5d55d.firebaseio.com',
-    storageBucket: 'tiktac-5d55d.appspot.com',
+    apiKey: 'AIzaSyC8OBx8kQlJ1ir0FoxHykN5ydVD6meJyho',
+    appId: '1:381796812762:android:fa373f83eb7f666eea62e3',
+    messagingSenderId: '381796812762',
+    projectId: 'new-project-f0523',
+    databaseURL: 'https://new-project-f0523-default-rtdb.firebaseio.com',
+    storageBucket: 'new-project-f0523.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyCLf_Rl4Ku9EqHknUKNIIiaiSDW7tctJd8',
+    appId: '1:381796812762:ios:f0cff298f94c1de8ea62e3',
+    messagingSenderId: '381796812762',
+    projectId: 'new-project-f0523',
+    databaseURL: 'https://new-project-f0523-default-rtdb.firebaseio.com',
+    storageBucket: 'new-project-f0523.appspot.com',
+    iosClientId: '381796812762-nmiho4jsr7uvlvsmlu2i61j85ddq7pdi.apps.googleusercontent.com',
+    iosBundleId: 'com.example.todoApp',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCLf_Rl4Ku9EqHknUKNIIiaiSDW7tctJd8',
+    appId: '1:381796812762:ios:f0cff298f94c1de8ea62e3',
+    messagingSenderId: '381796812762',
+    projectId: 'new-project-f0523',
+    databaseURL: 'https://new-project-f0523-default-rtdb.firebaseio.com',
+    storageBucket: 'new-project-f0523.appspot.com',
+    iosClientId: '381796812762-nmiho4jsr7uvlvsmlu2i61j85ddq7pdi.apps.googleusercontent.com',
+    iosBundleId: 'com.example.todoApp',
   );
 }

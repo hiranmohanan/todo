@@ -13,37 +13,33 @@ class HomeScreen extends StatelessWidget {
   final AppController appC = Get.put(AppController());
   @override
   Widget build(BuildContext context) {
-    appC.userID.value= Get.arguments;
+    appC.userID.value = Get.arguments;
     return Scaffold(
       backgroundColor: AppColors.yellowPale,
-      body:  GetBuilder<AppController>(
+      body: GetBuilder<AppController>(
         init: AppController(),
         initState: (_) {},
         builder: (_) {
           return ListView.builder(
-          itemCount: appC.todoList.length,
-          itemBuilder: ((context, index) {
-            String key = appC.todoList.keys.elementAt(index);
-            TodoModel todo = appC.todoList[key];
-            return GestureDetector(
-              onTap: () {
-                Get.toNamed('/update',arguments: key);
-              },
-              child: Container(
-                  padding: EdgeInsets.all(20),
-                  margin: EdgeInsets.only(left: 10, right: 10, bottom: 10),
-                  color: AppColors.cyanDark,
-                  child: Column(
-                    children: [Text(todo.title), Text(todo.description)],
-                  )),
-            );
-          }));
+              itemCount: appC.todoList.length,
+              itemBuilder: ((context, index) {
+                String key = appC.todoList.keys.elementAt(index);
+                TodoModel todo = appC.todoList[key];
+                return GestureDetector(
+                  onTap: () {
+                    Get.toNamed('/update', arguments: key);
+                  },
+                  child: Container(
+                      padding: EdgeInsets.all(20),
+                      margin: EdgeInsets.only(left: 10, right: 10, bottom: 10),
+                      color: AppColors.cyanDark,
+                      child: Column(
+                        children: [Text(todo.title), Text(todo.description)],
+                      )),
+                );
+              }));
         },
       ),
-
-
-
-
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Get.toNamed('/details');

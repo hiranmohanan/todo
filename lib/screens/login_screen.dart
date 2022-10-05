@@ -32,9 +32,9 @@ class LoginScreen extends StatelessWidget {
                     );
                     return;
                   }
-                  Get.toNamed('/',arguments:phoneTEC.text);
+                  Get.toNamed('/user', arguments: phoneTEC.text);
                 },
-                child: Text("Sent OTP"))
+                child: Text("Sent OTP")),
           ],
         ));
   }

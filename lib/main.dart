@@ -24,10 +24,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
-           initialRoute: '/login',
+        initialRoute: '/login',
         getPages: AppRoutes.pages,
-         debugShowCheckedModeBanner: false,
-                  theme: AppTheme.theme,);
+        debugShowCheckedModeBanner: false,
+        theme: AppTheme.theme,
+      );
     });
   }
 }

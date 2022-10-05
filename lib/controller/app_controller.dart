@@ -43,6 +43,14 @@ class AppController extends GetxController {
     Get.back();
   }
 
+  profileTodo(TextEditingController name, TextEditingController email) async {
+    final ref = FirebaseDatabase.instance.ref();
+    await ref.set({
+      "name": name.text,
+      "email": email.text,
+    });
+  }
+
   updateTodo(TextEditingController title, TextEditingController body,
       String key) async {
     if (title.text.isEmpty) {

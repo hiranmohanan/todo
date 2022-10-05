@@ -3,24 +3,29 @@ import 'package:todo_app/screens/details_screen.dart';
 import 'package:todo_app/screens/home_screen.dart';
 import 'package:todo_app/screens/login_screen.dart';
 import 'package:todo_app/screens/modify_screen.dart';
+import 'package:todo_app/screens/user_data.dart';
 
 class AppRoutes {
   static List<GetPage> pages = [
     GetPage(
       name: '/login',
-      page: () =>  LoginScreen(),
+      page: () => LoginScreen(),
     ),
     GetPage(
       name: '/',
-      page: () =>  HomeScreen(),
+      page: () => HomeScreen(),
     ),
-        GetPage(
+    GetPage(
       name: '/details',
-      page: () =>  DetailsScreen(),
+      page: () => DetailsScreen(),
     ),
-        GetPage(
+    GetPage(
       name: '/update',
-      page: () =>   ModifyScreen(),
+      page: () => ModifyScreen(),
+    ),
+    GetPage(
+      name: '/user',
+      page: () => User(),
     ),
   ];
 }
