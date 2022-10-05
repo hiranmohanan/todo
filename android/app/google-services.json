@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "490808776138",
+    "firebase_url": "https://tiktac-5d55d.firebaseio.com",
+    "project_id": "tiktac-5d55d",
+    "storage_bucket": "tiktac-5d55d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490808776138:android:61fa53009625bd69faeb33",
+        "android_client_info": {
+          "package_name": "com.example.g_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490808776138-3vjg14ehjpq3o72nqv6t88840pci3804.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.g_chat",
+            "certificate_hash": "8f6e91ca71828b70828a571126cff1987996c951"
+          }
+        },
+        {
+          "client_id": "490808776138-sb832cksak13mptubf7m93qq67le251h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWx-VVyKI5LALIfiZuTxgCsCVy_EB9Mws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490808776138-sb832cksak13mptubf7m93qq67le251h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490808776138:android:1da36f6f12f2b61afaeb33",
+        "android_client_info": {
+          "package_name": "com.example.todo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490808776138-sb832cksak13mptubf7m93qq67le251h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWx-VVyKI5LALIfiZuTxgCsCVy_EB9Mws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490808776138-sb832cksak13mptubf7m93qq67le251h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
