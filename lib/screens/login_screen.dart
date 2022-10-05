@@ -34,7 +34,7 @@ class LoginScreen extends StatelessWidget {
                   }
                   Get.toNamed('/user', arguments: phoneTEC.text);
                 },
-                child: Text("Sent OTP")),
+                child: Text("next")),
           ],
         ));
   }
